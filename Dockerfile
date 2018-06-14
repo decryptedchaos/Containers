@@ -20,6 +20,4 @@ ENV         HOME /home/container
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
-CMD         ulimit -n 100000
-CMD         ulimit -n
 CMD         ["/bin/bash", "/entrypoint.sh"]
